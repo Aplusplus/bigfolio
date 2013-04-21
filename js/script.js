@@ -1,3 +1,4 @@
+/*globals jQuery,Modernizr,log */
 /*
   BigPortfolio
   Simple system for type based a one page / one project per screen portfolio
@@ -10,74 +11,107 @@
 
 (function(W,document,jQuery,undefined) {
 
-var $W = $(W),
-    BP = {
-      settings: {
-        elMinHeight:'100%',
+
+  var $W = $(W);
+
+
+  var FOLIO = {
+      settings: $.extend({
+
+        sectionPercentageHeight:'100',
+        setHash:true,
+
         headlines: {
           compressor: 0.7,
-          minFontSize:'40px',
-          maxFontSize:'180px'
+          minFontSize:'1em',
+          maxFontSize:'40em'
         }
-        
-      }
+
+      },W.FOLIO_SETTINGS)
     };
 
-if(typeof W.FOLIO_SETTINGS === 'object') {
-  BP.settings = $.extend(BP.settings,W.FOLIO_SETTINGS);
-}
+  var F = FOLIO;
 
 
-BP.init = function(){
-  W.log('Start');
 
-  // initial layout
-  $W.on('resize',$.proxy(BP.layout,BP));
-  
-
-  // responsive headline sizing
-  $("h1,h2").fitText(BP.settings.headlines.compressor, BP.settings.headlines);
-
-  // Bind Key control using keymaster.js
-  W.key('down',BP.show_next);
-  W.key('up',BP.show_prev);
+  F.init = function(){
+    log('Start');
 
 
-  // scroll effect
-  BP.articles = $('article');
+    // setup sections as list for stroll … ?
+    // $('.post').wrapAll('<ul id="list">').wrap('<li>');
+    // F.sections = $('#list li');
+    F.sections = $('.post');
 
-  BP.articles.waypoint(function(){
+    // responsive headline sizing
+    // $("h1,h2").fitText(FOLIO.settings.headlines.compressor, FOLIO.settings.headlines);
 
-    BP.active = $(this);
-    BP.articles.removeClass('active');
-    BP.active.addClass('active');
-
-  },{ offset: '50%' });
-  
+    // // Bind Key control using keymaster.js
+    // W.key('down',F.show_next);
+    // W.key('up',F.show_prev);
 
 
-  // layout
-  BP.layout();
+    // scroll effect
+    // F.articles = $('article');
+
+    // bind layout to resize
+    $W.on('resize',$.proxy(F.layout,F)).resize();
+
+    // make captions sticky
+    if(!Modernizr.touch) {
+      $('.post').headstick('.caption');
+    }
+
+  };
+
+
+// detect if a section is active
+F._createScrollMap = function(){
+
 
 };
 
-BP.layout = function(){
 
-  // var window_height = $W.height();
-  // $('.project, .table, .waypoint_node,ul').height(window_height);
-  
+
+
+
+// Activate a content section
+F.setActive = function($element) {
+
+
+  F.active = $element;
+  F.active.addClass('active');
+  W.location.hash = '/'+FOLIO.active.attr('id');
+
+  if(!FOLIO.startTitle) {
+    FOLIO.startTitle = document.title;
+  }
+  document.title = FOLIO.startTitle +' → ' + FOLIO.active.find('h2').text();
+
+  W.log('Set active',FOLIO.active.attr('id'));
+
+};
+
+F.layout = function(){
+  W.log('layout');
+  // size sections
+  // var wh = $W.height();
+  // var h = Math.round(wh*(F.settings.sectionPercentageHeight/100));
+  // F.sections.height(h);
   // keep active project in viewport
 
 };
 
-BP.show_next = function(){
+FOLIO.show_next = function(){
   W.log('next…');
 };
 
-BP.show_prev = function(){
+FOLIO.show_prev = function(){
   W.log('prev…');
 };
 
-$(BP.init);
+$(FOLIO.init);
+
+
 
 }(window,document,jQuery));

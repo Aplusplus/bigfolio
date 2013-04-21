@@ -1,7 +1,25 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8248",
+  "creatorBuild" : "8283",
   "files" : {
+    "\/css\/custom.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/custom.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/css\/stroll.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/stroll.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -35,6 +53,17 @@
       "initialSize" : 773,
       "fileType" : 8192
     },
+    "\/js\/libs\/bigvideo.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/bigvideo.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/bigvideo.min.js",
+      "fileType" : 64
+    },
     "\/img\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -46,15 +75,15 @@
       "initialSize" : 403,
       "fileType" : 8192
     },
-    "\/js\/libs\/bigvideo.js" : {
+    "\/js\/libs\/video.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/bigvideo.js",
+      "inputAbbreviatedPath" : "\/js\/libs\/video.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/bigvideo.min.js",
+      "outputAbbreviatedPath" : "\/js\/libs\/video.min.js",
       "fileType" : 64
     },
     "\/js\/libs\/stroll.min.js" : {
@@ -79,6 +108,19 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min-ck.js",
       "fileType" : 64
     },
+    "\/css\/less\/framework.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/less\/framework.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/framework.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/js\/script.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -89,6 +131,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
       "fileType" : 64
+    },
+    "\/css\/framework.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/framework.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/img\/preview.png" : {
       "ignoreWasSetByUser" : 0,
@@ -112,27 +163,18 @@
       "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
       "fileType" : 64
     },
-    "\/less\/_variables.less" : {
+    "\/css\/less\/custom.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/_variables.less",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/less\/custom.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_variables.css",
+      "outputAbbreviatedPath" : "\/css\/custom.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/img\/test.png" : {
       "ignoreWasSetByUser" : 0,
@@ -145,15 +187,6 @@
       "initialSize" : 1147,
       "fileType" : 8192
     },
-    "\/css\/my.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/my.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/js\/libs\/jquery.scrollTo-1.4.3.1-min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -165,37 +198,15 @@
       "outputAbbreviatedPath" : "\/js\/libs\/jquery.scrollTo-1.4.3.1-min.min.js",
       "fileType" : 64
     },
-    "\/less\/style.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/style.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/style.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
-    "\/css\/reset.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/reset.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/less\/_defaults.less" : {
+    "\/css\/less\/_defaults.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/_defaults.less",
+      "inputAbbreviatedPath" : "\/css\/less\/_defaults.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_defaults.css",
+      "outputAbbreviatedPath" : "\/css\/css\/_defaults.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -222,24 +233,15 @@
       "outputAbbreviatedPath" : "\/js\/libs\/jquery-1.9.1.min.min.js",
       "fileType" : 64
     },
-    "\/index.template.html" : {
+    "\/js\/libs\/jquery.headstick.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.template.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/libs\/jquery-ui-1.8.22.custom.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/jquery-ui-1.8.22.custom.min.js",
+      "inputAbbreviatedPath" : "\/js\/libs\/jquery.headstick.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/jquery-ui-1.8.22.custom.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/libs\/jquery.headstick.min.min.js",
       "fileType" : 64
     },
     "\/img\/mk.jpg" : {
@@ -263,6 +265,24 @@
       "outputAbbreviatedPath" : "\/img\/icons.png",
       "initialSize" : 1591,
       "fileType" : 8192
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/index_old.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index_old.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/libs\/jquery.fittext.js" : {
       "ignoreWasSetByUser" : 0,
@@ -297,40 +317,49 @@
       "initialSize" : 1591,
       "fileType" : 8192
     },
-    "\/less\/_mixins.less" : {
+    "\/js\/libs\/jquery.headstick.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/_mixins.less",
+      "inputAbbreviatedPath" : "\/js\/libs\/jquery.headstick.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/jquery.headstick.min.js",
+      "fileType" : 64
+    },
+    "\/css\/less\/_mixins.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/less\/_mixins.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_mixins.css",
+      "outputAbbreviatedPath" : "\/css\/css\/_mixins.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/css\/stroll.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/stroll.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     }
   },
   "manualImportLinks" : [
     {
       "type" : 1,
       "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.headstick.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
       "linkedFileAbbreviatedPath" : "\/js\/libs\/stroll.min.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins.js",
       "followForSyntaxChecking" : 0
     },
     {
       "type" : 1,
-      "position" : 1,
+      "position" : 2,
       "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.fittext.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins.js",
       "followForSyntaxChecking" : 0
@@ -515,7 +544,7 @@
   "projectAttributes" : {
     "bourbonEnabled" : 0,
     "displayValue" : "bigfolio",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "compassEnabled" : 0
   }
 }

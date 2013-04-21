@@ -89,6 +89,18 @@
     transform: @arguments;
     transform-style: preserve-3d;
 }
+
+
+.transformOrigin(...) {
+        -webkit-transform-origin: @arguments;
+           -moz-transform-origin: @arguments;
+            -ms-transform-origin: @arguments;
+             -o-transform-origin: @arguments;
+                transform-origin: @arguments;
+}
+
+
+
 .rotate (@rotate) {
     -webkit-transform: rotate(@rotate);
     -moz-transform: rotate(@rotate);
