@@ -26,6 +26,13 @@
     // filter: ~"alpha(opacity = (@{opacityPercentage}))";
 }
 
+
+.box-shadow (@arguments) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
 .debug {
     border:1px solid red;
 }

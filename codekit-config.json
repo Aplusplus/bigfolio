@@ -42,15 +42,15 @@
       "initialSize" : 1273,
       "fileType" : 8192
     },
-    "\/img\/favicon64.png" : {
+    "\/img\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favicon64.png",
+      "inputAbbreviatedPath" : "\/img\/favicon.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favicon64.png",
-      "initialSize" : 773,
+      "outputAbbreviatedPath" : "\/img\/favicon.png",
+      "initialSize" : 403,
       "fileType" : 8192
     },
     "\/js\/libs\/bigvideo.js" : {
@@ -64,16 +64,14 @@
       "outputAbbreviatedPath" : "\/js\/libs\/bigvideo.min.js",
       "fileType" : 64
     },
-    "\/img\/favicon.png" : {
+    "\/css\/framework.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favicon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favicon.png",
-      "initialSize" : 403,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/css\/framework.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/js\/libs\/video.js" : {
       "ignoreWasSetByUser" : 0,
@@ -132,14 +130,16 @@
       "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
       "fileType" : 64
     },
-    "\/css\/framework.css" : {
+    "\/img\/favicon64.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/framework.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/img\/favicon64.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favicon64.png",
+      "initialSize" : 773,
+      "fileType" : 8192
     },
     "\/img\/preview.png" : {
       "ignoreWasSetByUser" : 0,
@@ -151,17 +151,6 @@
       "outputAbbreviatedPath" : "\/img\/preview.png",
       "initialSize" : 2146,
       "fileType" : 8192
-    },
-    "\/js\/libs\/modernizr-2.6.2.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
-      "fileType" : 64
     },
     "\/css\/less\/custom.less" : {
       "ignoreWasSetByUser" : 0,
@@ -175,6 +164,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/js\/libs\/modernizr-2.6.2.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
+      "fileType" : 64
     },
     "\/img\/test.png" : {
       "ignoreWasSetByUser" : 0,
@@ -272,15 +272,6 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/index_old.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index_old.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },

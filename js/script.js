@@ -54,22 +54,24 @@
     // scroll effect
     // F.articles = $('article');
 
-    // bind layout to resize
-    $W.on('resize',$.proxy(F.layout,F)).resize();
+    $W.on({
+      resize: F.layout,
+      scroll: F.scrollAdjust,
+      load: function(){
+        log('loaded');
+        $W.resize().scroll();
+      }
+    }).resize().scroll();
+
 
     // make captions sticky
     if(!Modernizr.touch) {
-      $('.post').headstick('.caption');
+      $('.post').headstick('.caption,.inner.text > h1');
     }
 
   };
 
 
-// detect if a section is active
-F._createScrollMap = function(){
-
-
-};
 
 
 
@@ -89,6 +91,18 @@ F.setActive = function($element) {
   document.title = FOLIO.startTitle +' → ' + FOLIO.active.find('h2').text();
 
   W.log('Set active',FOLIO.active.attr('id'));
+
+};
+
+F.scrollAdjust = function() {
+
+  var scrollTop = $W.scrollTop();
+
+  if(scrollTop < $W.height()*0.9) {
+    $('html').removeClass('pass-header');
+  } else {
+    $('html').addClass('pass-header');
+  }
 
 };
 

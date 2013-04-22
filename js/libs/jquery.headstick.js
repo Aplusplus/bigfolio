@@ -9,99 +9,110 @@
 * Date: 19.04.2013
 
 // Usage
-if(!Modernizr.touch) {
-  $('.post').headstick('.caption',{})
-}
+$('.post').headstick('.caption')
 
 */
 
 (function($) {
 
-  $.fn.headstick = function(headlines, options) {
+  $.fn.headstick = function(headlineSelector, options) {
 
     // Setup options
 
-    var fix = headlines,
-      settings = $.extend({
+    var settings = $.extend({
         onStick: 'headstick.stick',
-        onUnstick: 'headstick.unstick'
+        onUnstick: 'headstick.unstick',
+        top:'0px'
       }, options),
       $W = $(window),
-      $elements = $(this);
+      $elements = $(this),
+      measurements = [],
+      fixedElements = [];
 
-
-    if (!$(headlines, this).length || !headlines) {
+    // check if there is something to fix at all
+    if (!$(headlineSelector, this).length || !headlineSelector) {
       log('headstick.js ERROR: no headlines found in ', this);
       return;
     }
 
 
+    // static measurement references for performance
+    function _updateReferences() {
+
+      log('_update references');
+
+      measurements = [];
+      fixedElements = [];
+
+      $elements.each(function(){
+        var $container = $(this),
+            $fixedElement = $(headlineSelector,this);
+
+        fixedElements.push({
+          element:$fixedElement,
+          height:$fixedElement.outerHeight()
+        });
+        measurements.push({
+          top:$container.offset().top,
+          height:$container.height()
+        });
+      });
+
+    }
+
 
     function calcStickCSS() {
 
-      log('calc headline sticking',fix);
 
-      var viewportOffset = $W.scrollTop(),
-          viewportHeight = $W.height();
+      var viewportOffset = $W.scrollTop();
 
       if (viewportOffset <= 0) {
         return;
       }
 
-      $elements.each(function() {
+
+
+      $elements.each(function(i) {
+
+        log('check for stick…');
 
         var $slide = $(this),
-          offset = $slide.offset().top,
-          height = $slide.height(),
-          $fixedElement = $(fix,$slide),
-          fixedElementHeight = $fixedElement.outerHeight(),
-          posPoint = offset + height - fixedElementHeight;
+            fixedElementHeight = fixedElements[i].height,
+            posPoint = measurements[i].top + measurements[i].height - fixedElementHeight;
 
-        if (viewportOffset >= offset && viewportOffset < (offset + height)) {
 
-          $slide.trigger(settings.onStick);
+
+        if (viewportOffset >= measurements[i].top && viewportOffset < (measurements[i].top + measurements[i].height)) {
+
 
           if (posPoint > viewportOffset) {
 
-            $fixedElement.css({
-              top: '',
+            fixedElements[i].element.css({
+              top: settings.top,
               bottom: '',
               position: 'fixed'
             }).addClass('headfix-active');
 
+            $slide.trigger(settings.onStick);
+
+
           } else {
 
-            $fixedElement.css({
+            fixedElements[i].element.css({
               top: 'auto',
               bottom: '0px',
               position: 'absolute'
             }).removeClass('headfix-active');
           }
-
-          if ($slide.data('pe.sqln')) {
-
-            // determine amount scrolled
-            var scrolled = viewportOffset - (offset),
-              percentage = scrolled / (height - viewportHeight),
-              sqElCount = $slide.data('pe.sqln') - 1;
-
-
-            log($slide.attr('id'), sqElCount, percentage, Math.round(sqElCount * percentage));
-
-            $('.sq-el', $slide).removeClass('active').eq(Math.round(sqElCount * percentage)).addClass('active');
-
-          }
-
 
 
         } else {
 
 
-
           // above 
-          if (offset < viewportOffset) {
+          if (measurements[i][0] < viewportOffset) {
 
-            $fixedElement.css({
+            fixedElements[i].element.css({
               top: 'auto',
               bottom: '0px',
               position: 'absolute'
@@ -109,26 +120,40 @@ if(!Modernizr.touch) {
 
           } else {
 
-            $fixedElement.css({
+            fixedElements[i].element.css({
               top: '',
               bottom: '',
               position: ''
             }).removeClass('headfix-active');
 
+            $slide.trigger(settings.onUnstick);
+
           }
 
-          $slide.trigger(settings.onUnstick);
-
         }
+
+
+
 
       });
     }
 
 
-    log('register headstick',$elements);
-    $W.on('scroll', function(){
-      window.requestAnimFrame(calcStickCSS);
-    });
+
+
+    $W.on({
+      scroll: function(){
+        // window.requestAnimFrame(calcStickCSS);
+        calcStickCSS();
+      },
+      resize: function(){
+        _updateReferences();
+      },
+      load: function(){
+        _updateReferences();
+      }
+    }).resize().scroll();
+
   };
 
 })(jQuery);
