@@ -54,6 +54,35 @@
     // scroll effect
     // F.articles = $('article');
 
+
+
+
+    // make captions sticky
+    if(!Modernizr.touch) {
+      $('.post').headstick('.caption,.inner.text > h1');
+    }
+
+    // make the navigation
+
+    F.sections.each(function(i){
+      var $e = $(this),
+          ne = $('<a/>',{
+                href: '#'+$e.attr('id'),
+                text: (i+1 > 10) ? i+1 : '0'+(i+1)
+              });
+
+          ne.appendTo('#quicknav');
+    });
+
+    $('nav').localScroll({
+       axis:'y',
+       duration:1500,
+       easing:'easeInOutExpo'
+    });
+    // fit videos
+    $(".post").fitVids();
+
+
     $W.on({
       resize: F.layout,
       scroll: F.scrollAdjust,
@@ -62,13 +91,6 @@
         $W.resize().scroll();
       }
     }).resize().scroll();
-
-
-    // make captions sticky
-    if(!Modernizr.touch) {
-      $('.post').headstick('.caption,.inner.text > h1');
-    }
-
   };
 
 
@@ -109,10 +131,24 @@ F.scrollAdjust = function() {
 F.layout = function(){
   W.log('layout');
   // size sections
-  // var wh = $W.height();
+  var wh = $W.height();
   // var h = Math.round(wh*(F.settings.sectionPercentageHeight/100));
+  F.sections.each(function(){
+      var $e = $(this);
+      log($e.height(),wh);
+      if($e.height()<wh) {
+        $e.height(wh).addClass('below-min-h');
+      }
+  });
   // F.sections.height(h);
   // keep active project in viewport
+
+  // center nav
+  var $n = $('nav');
+
+    $n.css({
+      top:($W.height()-$n.height())/2
+    });
 
 };
 

@@ -2,7 +2,7 @@
 /*! 
 * Headstick.js V 0.1
 *
-* Copyright 2013, Uli SChöberl http://aplusplus.org
+* Copyright 2013, Uli Schöberl http://aplusplus.org
 * Released under the WTFPL license 
 * http://sam.zoy.org/wtfpl/
 *

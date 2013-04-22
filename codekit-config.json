@@ -31,6 +31,17 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.js",
       "fileType" : 64
     },
+    "\/js\/libs\/jquery.fitvids.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/jquery.fitvids.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/jquery.fitvids.min.js",
+      "fileType" : 64
+    },
     "\/img\/touchicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -42,15 +53,15 @@
       "initialSize" : 1273,
       "fileType" : 8192
     },
-    "\/img\/favicon.png" : {
+    "\/img\/favicon64.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favicon.png",
+      "inputAbbreviatedPath" : "\/img\/favicon64.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favicon.png",
-      "initialSize" : 403,
+      "outputAbbreviatedPath" : "\/img\/favicon64.png",
+      "initialSize" : 773,
       "fileType" : 8192
     },
     "\/js\/libs\/bigvideo.js" : {
@@ -106,6 +117,17 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min-ck.js",
       "fileType" : 64
     },
+    "\/js\/script.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/script.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
+      "fileType" : 64
+    },
     "\/css\/less\/framework.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -119,26 +141,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/js\/script.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/script.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
-      "fileType" : 64
-    },
-    "\/img\/favicon64.png" : {
+    "\/img\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favicon64.png",
+      "inputAbbreviatedPath" : "\/img\/favicon.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favicon64.png",
-      "initialSize" : 773,
+      "outputAbbreviatedPath" : "\/img\/favicon.png",
+      "initialSize" : 403,
       "fileType" : 8192
     },
     "\/img\/preview.png" : {
@@ -189,7 +200,7 @@
     },
     "\/js\/libs\/jquery.scrollTo-1.4.3.1-min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/libs\/jquery.scrollTo-1.4.3.1-min.js",
@@ -244,17 +255,6 @@
       "outputAbbreviatedPath" : "\/js\/libs\/jquery.headstick.min.min.js",
       "fileType" : 64
     },
-    "\/img\/mk.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/mk.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/mk.jpg",
-      "initialSize" : 122293,
-      "fileType" : 4096
-    },
     "\/img\/icons.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -265,6 +265,28 @@
       "outputAbbreviatedPath" : "\/img\/icons.png",
       "initialSize" : 1591,
       "fileType" : 8192
+    },
+    "\/js\/libs\/jquery.localScroll.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/jquery.localScroll.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/jquery.localScroll.min.js",
+      "fileType" : 64
+    },
+    "\/img\/mk.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/mk.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/mk.jpg",
+      "initialSize" : 122293,
+      "fileType" : 4096
     },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -337,20 +359,41 @@
     {
       "type" : 1,
       "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.headstick.js",
+      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.scrollTo-1.4.3.1-min.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.localScroll.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.fitvids.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins.js",
+      "followForSyntaxChecking" : 0
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.headstick.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
       "linkedFileAbbreviatedPath" : "\/js\/libs\/stroll.min.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins.js",
       "followForSyntaxChecking" : 0
     },
     {
       "type" : 1,
-      "position" : 2,
+      "position" : 5,
       "linkedFileAbbreviatedPath" : "\/js\/libs\/jquery.fittext.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins.js",
       "followForSyntaxChecking" : 0
