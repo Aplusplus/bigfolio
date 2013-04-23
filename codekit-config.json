@@ -2,21 +2,21 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/css\/custom.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/custom.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/css\/stroll.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/stroll.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/css\/custom.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/custom.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -53,17 +53,6 @@
       "initialSize" : 1273,
       "fileType" : 8192
     },
-    "\/img\/favicon64.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favicon64.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favicon64.png",
-      "initialSize" : 773,
-      "fileType" : 8192
-    },
     "\/img\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -75,14 +64,27 @@
       "initialSize" : 403,
       "fileType" : 8192
     },
-    "\/css\/framework.css" : {
+    "\/img\/favicon64.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/framework.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/img\/favicon64.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favicon64.png",
+      "initialSize" : 773,
+      "fileType" : 8192
+    },
+    "\/js\/libs\/bigvideo.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/bigvideo.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/bigvideo.min.js",
+      "fileType" : 64
     },
     "\/js\/libs\/video.js" : {
       "ignoreWasSetByUser" : 0,
@@ -95,16 +97,14 @@
       "outputAbbreviatedPath" : "\/js\/libs\/video.min.js",
       "fileType" : 64
     },
-    "\/js\/libs\/stroll.min.js" : {
+    "\/css\/framework.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/stroll.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/stroll.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/framework.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/js\/plugins.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -128,6 +128,17 @@
       "outputAbbreviatedPath" : "\/js\/script.min-ck.js",
       "fileType" : 64
     },
+    "\/js\/libs\/stroll.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/stroll.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/stroll.min.min.js",
+      "fileType" : 64
+    },
     "\/css\/less\/framework.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -137,41 +148,6 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/framework.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
-    "\/js\/libs\/bigvideo.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/bigvideo.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/bigvideo.min.js",
-      "fileType" : 64
-    },
-    "\/img\/preview.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/preview.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/preview.png",
-      "initialSize" : 2146,
-      "fileType" : 8192
-    },
-    "\/css\/less\/custom.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/css\/less\/custom.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/custom.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -186,6 +162,30 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/libs\/modernizr-2.6.2.min.min.js",
       "fileType" : 64
+    },
+    "\/css\/less\/custom.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/css\/less\/custom.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/custom.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/img\/preview.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/preview.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/preview.png",
+      "initialSize" : 2146,
+      "fileType" : 8192
     },
     "\/img\/test.png" : {
       "ignoreWasSetByUser" : 0,
@@ -277,6 +277,15 @@
       "initialSize" : 1591,
       "fileType" : 8192
     },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/js\/libs\/jquery.localScroll.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -287,15 +296,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/libs\/jquery.localScroll.min.js",
       "fileType" : 64
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/js\/libs\/jquery.fittext.js" : {
       "ignoreWasSetByUser" : 0,
